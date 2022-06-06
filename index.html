@@ -6,39 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big house</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&family=Roboto:wght@100&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 </head>
 <body>
     <header>
         <div>
             <h1 class="header__title">Big House Food</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="faq.html">FAQ</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#faq">FAQ</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
-    <section class="section1">
-        <h2 class="section1__title"> come to try, come to taste <span class="section1__title--bigger">come to big house</span>
-        </h2>
-        <p class="section1__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis!</p>
-    </section>
-    <main class="main">
-        <p class="main__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum consequatur autem optio a.
-        Reprehenderit incidunt quos vitae animi laborum dignissimos, tenetur quis, est a ratione numquam praesentium dolor, 
-        enim at quae eveniet porro architecto eos ipsum error nobis laudantium iste.
-        </p>
+    <!-- Home -->
+    <main>
+        <section id="home" class="home">
+            <h3 class="mainSection1__title"> come to try, come to taste <span class="section1__title--bigger">come to big house</span>
+            </h3>
+            <p class="section1__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nobis!</p>
+        </section>
+        <div class="main__p">
+            <p class="main__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum consequatur autem optio a.
+            Reprehenderit incidunt quos vitae animi laborum dignissimos, tenetur quis, est a ratione numquam praesentium dolor, 
+            enim at quae eveniet porro architecto eos ipsum error nobis laudantium iste.
+            </p>
+        </div>
+        <section class="mainSection2">
+            <button class="section2__btn--1">Bookings</button>
+            <button class="section2__btn--2">Takeaway</button>
+        </section>
+        <div>
+            <img class="main__img" src="assets/pasta.png" alt="Plato de fideos">
+        </div>
     </main>
-    <section class="section2">
-        <button class="section2__btn--1"></button>
-        <button class="section2__btn--2"></button>
+    <!-- Menu -->
+    <section id="menu" class="menu">
+        <div class="menuCard menuCard__chicken">
+            <img src="assets/chicken.png" alt="Poio">
+            <span>Chicken</span> 
+        </div>
+        <div class="menuCard menuCard__meat">
+            <img src="assets/meat-icon.png" alt="Carne">
+            <span>Meat</span> 
+        </div>
+        <div class="menuCard menuCard__pastas">
+            <img src="assets/pasta-icon.png" alt="Pastas">
+            <span>Pastas</span> 
+        </div>
+        <div class="menuCard menuCard__pizza">
+            <img src="assets/pizza-icon.png" alt="Pizza">
+            <span>Pizza</span>
+        </div>
+        <div class="menuCard menuCard__salads">
+            <img src="assets/salad-icon.png" alt="Ensalada">
+            <span>Salads</span>
+        </div>
+        <div class="menuCard menuCard__sandwich">
+            <img src="assets/sandwich-png.png" alt="Sandwich">
+            <span>Sandwiches</span>
+        </div>
     </section>
+    <!-- Contact -->
+    <section id="contact">
+        <div class="contact__location">
+            <img class="contact__img contact__img--location" src="assets/location-icon.png" alt="Localizacion">
+            <p class="contact__p contact__p--location">Dreamstreet Av.4200</p>
+        </div>
+        <div class="contact__phone">
+            <img class="contact__img contact__img--phone" src="assets/telephone-icon.png" alt="Telefono">
+            <p class="contact__p contact__p--phone">589-468-768-22</p>
+        </div>
+        <div class="contact__mail">
+            <img class="contact__img contact__img--mail" src="assets/mail-icon.png" alt="Email">
+            <p class="contact__p contact__p--mail">contact@bhfoods.com</p>
+        </div>
+    </section>
+    <section class="contact--Form">
+        <div class="contactForm__div">
+            <h4 class="contactForm__h4">Need an appointment?</h4>
+            <p class="contactForm__p">Register here!</p>
+        </div>
+        <form class="contactForm" action="">
+            <label class="contactForm__label contactForm__label--name" for="contact">Nombre y apellido 
+                <input class="contactForm__input contactForm__input--name" type="text" placeholder="Nombre y apellido">
+            </label>
+            <label class="contactForm__label contactForm__label--mail" for="contact">Email
+                <input class="contactForm__input contactForm__input--mail" type="email" placeholder="Email">
+            </label>
+            <label class="contactForm__label contactForm__label--phone" for="contact">Telefono
+                <input class="contactForm__input contactForm__input--phone" type="number">
+            </label>
+            <label class="contactForm__label contactForm__label--textarea" for="contact">Su mensaje
+                <textarea class="contactForm__textarea" name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+            </label>
+        </form>
+    </section>
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <h3>FAQ</h3>
+        <div class="faqDiv faqDiv__1">
+            <div class="faq1">
+                <p class="faq1__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum porro eaque odit harum eveniet natus.</p>
+                <p class="faq1__p faq1__pCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, cumque quasi accusantium est reprehenderit aliquam dolores deleniti, debitis eveniet sit adipisci aperiam ducimus consequuntur modi.</p>
+            </div>
+        </div>
+        <div class="faqDiv faqDiv__2">
+            <div class="faq2">
+                <p class="faq2__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, laboriosam. Harum distinctio reprehenderit quidem expedita.</p>
+                <p class="faq2__p faq2__pCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque impedit maiores excepturi aut itaque ipsum suscipit. Numquam aspernatur neque, ut sed nesciunt iste placeat!</p>
+            </div>
+        </div>
+        <div class="faqDiv faqDiv__3">
+            <div class="faq3">
+                <p class="faq3__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim magni. Vel ratione praesentium error?</p>
+                <p class="faq3__p faq3__pCont">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus deleniti suscipit architecto dolores non praesentium dolor provident, quis ipsa omnis inventore rem hic dolore.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
     <footer>
         <div class="footer__div">
-            <p class="footer__p">Copyright A</p>                                           
-            <img class="footer__img" src="" alt="">
+            <p class="footer__p">Copyright Agus</p>                                           
         </div>
     </footer>
+    <!-- Bootstrap Link JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 </body>
 </html>
