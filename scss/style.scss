@@ -1,5 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "extends";
+
+
+/* Header*/
+header{
+    background-color: #BD5A42;
 }
+
+.header__div{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__title{
+    font-weight: 700;
+    color: #FFE0BD;
+
+}
+
+/* Nav */
+
+/* Home */
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSection1__title{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDiv{
+    background-color: #F3EED9;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+}
+
+.main__img{
+    height: 400px;
+    width: 450px;
+}
+
+/* Menu */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuCard{
+    display: flex;
+    flex-direction: column;
+    width: 189px;
+    height: 302px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3EED9;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #FF8F71;
+}
+
+.card__text{
+    color: #FF8F71;  
+    padding: 1rem;
+    font-weight: 700;
+
+}
+
+.card__img{
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+
