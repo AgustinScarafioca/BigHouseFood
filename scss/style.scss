@@ -15,7 +15,6 @@ header{
 }
 
 .header__title{
-    font-weight: 700;
     color: #FFE0BD;
 
 }
@@ -23,7 +22,6 @@ header{
 /* Nav */
 
 /* Home */
-
 
 .home{
     display: flex;
@@ -33,6 +31,10 @@ header{
 .mainSection1__title{
     display: flex;
     flex-direction: column;
+}
+
+.h3__p{
+    font-size: 24px;
 }
 
 .mainDiv{
@@ -90,3 +92,23 @@ header{
     padding: 1rem;
 }
 
+/* Contact */
+
+.contact__img{
+    height: 40px;
+    width: 40px;
+}
+
+
+.contact__data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFDDBA;
+}

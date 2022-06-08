@@ -3,9 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-}
-
-/* Header*/
+  font-weight: 700;
+} /* Header*/
 header {
   background-color: #BD5A42;
 }
@@ -16,7 +15,6 @@ header {
 }
 
 .header__title {
-  font-weight: 700;
   color: #FFE0BD;
 }
 
@@ -30,6 +28,10 @@ header {
 .mainSection1__title {
   display: flex;
   flex-direction: column;
+}
+
+.h3__p {
+  font-size: 24px;
 }
 
 .mainDiv {
@@ -83,6 +85,25 @@ header {
   width: 150px;
   height: 150px;
   padding: 1rem;
+}
+
+/* Contact */
+.contact__img {
+  height: 40px;
+  width: 40px;
+}
+
+.contact__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFDDBA;
 }
 
 /*# sourceMappingURL=style.css.map */
